@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # The URL for your running API
-API_URL = "http://localhost:8000/predict"
+API_URL = "https://airbnb-fastapi.onrender.com/predict"
 
 st.title("Airbnb Rental Price Prediction")
 st.write("Enter the details of your property to get the predicted rental price.")
