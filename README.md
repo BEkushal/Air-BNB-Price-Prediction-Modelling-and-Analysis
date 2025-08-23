@@ -51,6 +51,7 @@ This Notion workspace includes:
 
 - **Try the app here:** [Web Application](https://airbnb-streamlit.onrender.com)  
 - **API endpoint:** [https://airbnb-fastapi.onrender.com/predict](https://airbnb-fastapi.onrender.com/predict)
+> ℹ️ If you visit the API's root URL and get a browser warning, don't worry—simply visit `/docs` (or [this link](https://airbnb-fastapi.onrender.com/docs)) to see the interactive API and usage instructions.
 - *You can use the web interface or send POST requests for predictions!*
 
 ---
