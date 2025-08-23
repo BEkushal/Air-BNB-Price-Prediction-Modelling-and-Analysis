@@ -55,4 +55,7 @@ def predict_price(req: PredictRequest):
     }
 
 # To run:
-# uvicorn server.backend:app --reload
+if __name__ == "__main__":
+    import uvicorn
+     # Adjust module path as needed for your project structure
+    uvicorn.run("server.backend:app", host="127.0.0.1", port=8000, reload=True)
