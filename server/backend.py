@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import pickle
 import numpy as np
@@ -7,12 +8,21 @@ import numpy as np
 # Load the model and scaler
 with open('models/ridge_model_and_scaler.pkl', 'rb') as f:
     best_model, scaler = pickle.load(f)
+    
 
 # app bio
 app = FastAPI(
     title="Airbnb Price Prediction API",
     description="API for predicting Airbnb rental prices from structured features",
     version="1.0"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Or specify your Streamlit app domain for more security
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Define the expected input features (customize fields as per your encoded model's features)
