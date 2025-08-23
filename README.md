@@ -60,8 +60,8 @@ This Notion workspace includes:
 **1️⃣ Clone the Repository**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/airbnb-price-prediction-ml.git
-cd airbnb-price-prediction-ml
+git clone https://github.com/BEkushal/Air-BNB-Price-Prediction-Modelling-and-Analysis.git
+cd Air-BNB-Price-Prediction-Modelling-and-Analysis
 ```
 
 **2️⃣ Set Up Environment**
